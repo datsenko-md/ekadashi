@@ -68,9 +68,9 @@ const getDays = (data) => {
 
 const getMessages = (ekadashiList) => ekadashiList.map((e) => 'Харе Крішна, дорогі віддані 🙏\n\n'
   + `Завтра, ${e.fastDate.getDate()} ${monthsUa[e.fastDate.getMonth()]}, `
-  + `піст за **${e.name}** екадаші __(піст на зерно та боби)__.\n\n`
+  + `піст за **${e.name}** екадаші __(піст на зерно та боби)__\n\n`
   + `Вихід з посту ${e.feastDate.getDate()} ${monthsUa[e.feastDate.getMonth()]} `
-  + `з **${e.feastStart}** до **${e.feastFinish}** за київським часом\n\n`
+  + `з **${e.feastStart}** до **${e.feastFinish}**\n\n`
   + '#екадаші');
 
 const data = fs.readFileSync('/home/max/p/ekadashi/calendars/ekadashi2023.txt', 'utf8');
