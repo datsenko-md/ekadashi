@@ -1,6 +1,9 @@
 /* eslint no-restricted-syntax: "off" */
 
-import fs from 'fs';
+/** Calendars link
+ * https://www.vaisnavacalendar.info/calendar-file-downloads-2
+ */
+
 import _ from 'lodash';
 import d from 'date-and-time';
 
@@ -73,8 +76,9 @@ const getMessages = (ekadashiList) => ekadashiList.map((e) => 'Харе Кріш
   + `з **${e.feastStart}** до **${e.feastFinish}**\n\n`
   + '#екадаші');
 
-const data = fs.readFileSync('/home/max/p/ekadashi/calendars/ekadashi2023.txt', 'utf8');
-const ekadashi = getDays(data);
-const messages = getMessages(ekadashi);
-const content = messages.join('\n\n\n\n');
-fs.writeFileSync('/home/max/p/ekadashi/result.txt', content);
+export default (data) => {
+  const ekadashi = getDays(data);
+  const messages = getMessages(ekadashi);
+  const content = messages.join('\n\n\n\n');
+  return content;
+};
