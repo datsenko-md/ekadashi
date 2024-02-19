@@ -11,6 +11,7 @@ const monthsEn = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
 const monthsUa = ['січня', 'лютого', 'березня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня'];
 
 const ekadashiMap = {
+  Saphala: 'Сапхала',
   Putrada: 'Путрада',
   'Sat-tila': 'Шат-тіла',
   Bhaimi: 'Бхаймі',
