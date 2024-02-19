@@ -7,4 +7,4 @@
     * make install
 
 ## Usage
-    * make ekadashi // => messages will be in result.txt
+    * make ekadashi // => messages for current year ekadashi for Dnipro will be in result.txt
